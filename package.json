@@ -1,0 +1,29 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "A bookstore API",
+  "main": "server.js",
+  "author": "Sam",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.15.1",
+    "config": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.15",
+    "morgan": "^1.7.0",
+    "wolfram-alpha-api": "https://products.wolframalpha.com/api/libraries/javascript/wolfram-alpha-api-1.0.0-rc.1.tgz"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5",
+    "nyc": "^15.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --timeout 10000",
+    "cover1": "nyc --reporter=text mocha"
+  }
+}
